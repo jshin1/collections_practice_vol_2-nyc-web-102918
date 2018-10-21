@@ -47,9 +47,11 @@ def count_elements(array)
     info.each do |k, v|
       count_for_names[v] += 1
     end
-    
   end
-  count_for_names
+  count_for_names.each do |name, count|
+    new_array << {name: name, count: count}
+  end
+  new_array
 end
 
 def merge_data(key, value)
