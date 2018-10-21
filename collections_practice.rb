@@ -41,8 +41,12 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  count = {}
-  binding.pry
+  count_for_names = Hash.new(0)
+  array.each do |k, v|
+    binding.pry
+    count_for_names[v] + 1
+  end
+  count_for_names
 end
 
 def merge_data(key, value)
