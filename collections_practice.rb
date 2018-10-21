@@ -44,11 +44,11 @@ def count_elements(array)
   count_for_names = Hash.new(0)
   array.each do |info|
     info.each do |k, v|
-      binding.pry
       count_for_names[v] += 1
     end
   end
   count_for_names
+  binding.pry
 end
 
 def merge_data(key, value)
